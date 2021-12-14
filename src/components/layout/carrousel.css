@@ -1,0 +1,9 @@
+.modal {
+	max-height: 88% !important;
+	overflow: auto;
+	text-align: center;
+}
+
+.img {
+	max-width: 100%;
+}
