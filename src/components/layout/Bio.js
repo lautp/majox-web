@@ -13,6 +13,8 @@ const Bio = () => {
 
     useEffect(()=> {
         getBio(myBio.current);
+
+        //eslint-disable-next-line
     }, [])
 
     return (

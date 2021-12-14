@@ -12,6 +12,7 @@ const Libros = () => {
 
     useEffect(()=> {
         getLibros(myLibros.current);
+        //eslint-disable-next-line
     }, [])
 
     return (

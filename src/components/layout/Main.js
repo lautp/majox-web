@@ -15,8 +15,8 @@ const Main = () => {
     const [portMeasure, setPortMeasure] = useState('0px');
     const [bioMeasure, setBioMeasure] = useState('0px');
     const [libroMeasure, setLibroMeasure] = useState('0px');
+    
     let count = 0;
-
     
     useEffect(()=> {
         setInterval(()=>{
@@ -51,14 +51,16 @@ const Main = () => {
                 count = 0
             }
         }, 300)
+
+        //eslint-disable-next-line
     }, [count===0])
 
     return (
         <div className='container'  >
             <div className='row'>
                 <div className='col s2' >
-                    <a href="javascript:;" onClick={() => toComp(libros)}><img className='libros' src={librosI} alt=""  style={{width:'165%', marginTop:'5em', position:'relative', bottom:libroMeasure, transition:'bottom 0.5s'}} /></a>
-                    <a href="javascript:;" onClick={() => toComp(bio)}><img className='bio' src={bioI} alt="" style={{marginTop:'5em', width:'140%', position:'relative', top:bioMeasure, transition:'top 0.5s'}}/></a>
+                    <a href="javascript:;" onClick={() => toComp(libros)}><img className='libros' src={librosI} alt="libros"  style={{width:'165%', marginTop:'5em', position:'relative', bottom:libroMeasure, transition:'bottom 0.5s'}} /></a>
+                    <a href="javascript:;" onClick={() => toComp(bio)}><img className='bio' src={bioI} alt="bio" style={{marginTop:'5em', width:'140%', position:'relative', top:bioMeasure, transition:'top 0.5s'}}/></a>
                 </div>
                 
                 <div className='col s8' style={{padding:'0'}}>
@@ -68,7 +70,7 @@ const Main = () => {
                     style={{marginTop:'7em', paddingLeft:'0'}}
                     
                     >
-                    <a href="javascript:;" onClick={() => toComp(portfolio)}><img className='portfolio' src={portfolioI} alt="" style={{width:'140%', position:'relative', top:portMeasure, transition:'top 0.5s'}} /></a>
+                    <a href="javascript:;" onClick={() => toComp(portfolio)}><img className='portfolio' src={portfolioI} alt="portfolio" style={{width:'140%', position:'relative', top:portMeasure, transition:'top 0.5s'}} /></a>
                 </div>
             </div>
         </div>
