@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useContext} from 'react';
+import React, {useEffect, useState, useContext, useRef} from 'react';
 import majox from '../img/majox.png';
 import bioI from '../img/bio.png';
 import librosI from '../img/libros.png';
@@ -10,15 +10,19 @@ import MainContext from '../../context/mainContext';
 const Main = () => {
 
     const mainContext = useContext(MainContext);
-    const {toComp, bio, libros, portfolio} = mainContext;
+    const {toComp, bio, libros, portfolio, getMain} = mainContext;
 
     const [portMeasure, setPortMeasure] = useState('0px');
     const [bioMeasure, setBioMeasure] = useState('0px');
     const [libroMeasure, setLibroMeasure] = useState('0px');
+
+    const myMain = useRef();
     
     let count = 0;
     
     useEffect(()=> {
+        getMain(myMain.current);
+
         setInterval(()=>{
             if(count===0){
                 count = 1;
@@ -56,10 +60,10 @@ const Main = () => {
     }, [count===0])
 
     return (
-        <div className='container'  >
+        <div className='container'   >
             <div className='row'>
                 <div className='col s2' >
-                    <a href="javascript:;" onClick={() => toComp(libros)}><img className='libros' src={librosI} alt="libros"  style={{width:'165%', marginTop:'5em', position:'relative', bottom:libroMeasure, transition:'bottom 0.5s'}} /></a>
+                    <a href="javascript:;" onClick={() => toComp(libros)}><img className='' src={librosI} alt="libr"  style={{width:'165%', marginTop:'5em', position:'relative', bottom:libroMeasure, transition:'bottom 0.5s'}} /></a>
                     <a href="javascript:;" onClick={() => toComp(bio)}><img className='bio' src={bioI} alt="bio" style={{marginTop:'5em', width:'140%', position:'relative', top:bioMeasure, transition:'top 0.5s'}}/></a>
                 </div>
                 

@@ -1,4 +1,4 @@
-import { GET_LIBROS, GET_BIO, GET_PORTFOLIO, GET_MAJOX } from "../types";
+import { GET_LIBROS, GET_BIO, GET_PORTFOLIO, GET_MAJOX, GET_MAIN } from "../types";
 
 export default (state, action) => { 
     switch (action.type) {
@@ -23,11 +23,11 @@ export default (state, action) => {
                 ...state,
                 portfolio: action.payload
             };
-        case GET_MAJOX:
+        case GET_MAIN:
             
             return{
                 ...state,
-                majox: action.payload
+                main: action.payload
             };
     
         default:
