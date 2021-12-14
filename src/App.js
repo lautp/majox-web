@@ -17,7 +17,7 @@ function App() {
         <Libros />
         <Carrousel />
         <div style={{textAlign:'center'}}>
-        <i className='hide-on-large-only' ><img src={negra} alt="" style={{width:'20%'}}/></i>
+          <i className='hide-on-large-only' ><img src={negra} alt="" style={{width:'20%'}}/></i>
         </div>
       </div>
     </MainState>

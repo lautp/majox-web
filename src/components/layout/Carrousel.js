@@ -18,7 +18,7 @@ import aram2 from '../img/42.jpg';
 import aram3 from '../img/43.jpg';
 import yoz from '../img/yoz.jpg';
 import port from '../img/port.png'
-import './carrousel.css'
+import '../styles/carrousel.css'
 
 const Carrousel = () => {
     
@@ -35,18 +35,18 @@ const Carrousel = () => {
 
     return (
         <div ref={myPortfolio} style={{paddingTop:'5em'}}>
-            <div className="container hide-on-small-only" style={{marginBottom:'5%'}}>
+            <div className="container hide-on-small-only port">
                 <div className="row">
                     <div className="col s3">
-                            <img src={port} alt="port" style={{width:'100%'}}/>
+                            <img src={port} alt="port"/>
                     </div>
                 </div>
             </div>
 
-            <div className="container hide-on-large-only" style={{marginBottom:'5%'}}>
+            <div className="container hide-on-large-only port">
                 <div className="row">
                     <div className="col s6">
-                            <img src={port} alt="port" style={{width:'100%'}}/>
+                            <img src={port} alt="port"/>
                     </div>
                 </div>
             </div>
@@ -54,52 +54,52 @@ const Carrousel = () => {
             <div className="container">
                 <div className="row">
                     <div className='col s4'>
-                        <img src={penny1} className='materialboxed' alt='penny1' style={{width:'100%', }} />
+                        <img src={penny1} className='materialboxed' alt='penny1'/>
                     </div>
                     <div className='col s4'>
-                        <img src={penny2} className='materialboxed' alt='penny2' style={{width:'100%'}}/>
+                        <img src={penny2} className='materialboxed' alt='penny2'/>
                     </div>
                     <div className='col s4'>
-                        <img src={penny3} className='materialboxed' alt='penny3' style={{width:'100%'}}/>
+                        <img src={penny3} className='materialboxed' alt='penny3'/>
                     </div>
                     <div className='col s4'>
-                        <img src={bsas1} className='materialboxed' alt='bsas1' style={{width:'100%'}}/>
+                        <img src={bsas1} className='materialboxed' alt='bsas1'/>
                     </div>
                     <div className='col s4'>
-                        <img src={bsas2} className='materialboxed' alt='bsas2' style={{width:'100%'}}/>
+                        <img src={bsas2} className='materialboxed' alt='bsas2'/>
                     </div>
                     <div className='col s4'>
-                        <img src={bsas3} className='materialboxed' alt='bsas3' style={{width:'100%'}}/>
+                        <img src={bsas3} className='materialboxed' alt='bsas3'/>
                     </div>
                     <div className='col s4'>
-                        <img src={descubiertas} className='materialboxed' alt='descubiertas' style={{width:'100%'}}/>
+                        <img src={descubiertas} className='materialboxed' alt='descubiertas'/>
                     </div>
                     <div className='col s4'>
-                        <img src={descubiertas2} className='materialboxed' alt='descubiertas2' style={{width:'100%'}}/>
+                        <img src={descubiertas2} className='materialboxed' alt='descubiertas2'/>
                     </div>
                     <div className='col s4'>
-                        <img src={ereccion} className='materialboxed' alt='ereccion' style={{width:'100%'}}/>
+                        <img src={ereccion} className='materialboxed' alt='ereccion'/>
                     </div>
                     <div className='col s4'>
-                        <img src={llevamealtelo} className='materialboxed' alt='llevame al telo' style={{width:'100%'}}/>
+                        <img src={llevamealtelo} className='materialboxed' alt='llevame al telo'/>
                     </div>
                     <div className='col s4'>
-                        <img src={oprimidas} className='materialboxed' alt='oprimidas' style={{width:'100%'}}/>
+                        <img src={oprimidas} className='materialboxed' alt='oprimidas'/>
                     </div>
                     <div className='col s4'>
-                        <img src={patriarcade} className='materialboxed' alt='patriarcade' style={{width:'100%'}}/>
+                        <img src={patriarcade} className='materialboxed' alt='patriarcade'/>
                     </div>
                     <div className='col s4'>
-                        <img src={aram1} className='materialboxed' alt='aram1' style={{width:'100%'}}/>
+                        <img src={aram1} className='materialboxed' alt='aram1'/>
                     </div>
                     <div className='col s4'>
-                        <img src={aram2} className='materialboxed' alt='aram2' style={{width:'100%'}} />
+                        <img src={aram2} className='materialboxed' alt='aram2' />
                     </div>
                     <div className='col s4'>
-                        <img src={aram3} className='materialboxed' alt='aram3' style={{width:'100%'}}/>
+                        <img src={aram3} className='materialboxed' alt='aram3'/>
                     </div>
                     <div className='col s4 offset-s4'>
-                        <img src={yoz} className='materialboxed' alt='aram4' style={{width:'100%'}}/>
+                        <img src={yoz} className='materialboxed' alt='aram4'/>
                     </div>
                 </div>    
             </div>

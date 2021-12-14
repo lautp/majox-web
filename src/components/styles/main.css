@@ -1,0 +1,27 @@
+.libros {
+	width: 165%;
+	margin-top: 5em;
+	position: relative;
+	transition: bottom 0.5s;
+}
+
+.bio {
+	margin-top: 5em;
+	width: 140%;
+	position: relative;
+	transition: top 0.5s;
+}
+
+.majox {
+	width: 110%;
+}
+
+.port {
+	margin-top: 7em;
+}
+
+.portfolio {
+	width: 140%;
+	position: relative;
+	transition: top 0.5s;
+}

@@ -5,6 +5,8 @@ import librosI from '../img/libros.png';
 import portfolioI from '../img/portfolio.jpg';
 import MainContext from '../../context/mainContext';
 
+import '../styles/main.css';
+
 
 
 const Main = () => {
@@ -63,18 +65,15 @@ const Main = () => {
         <div className='container'   >
             <div className='row'>
                 <div className='col s2' >
-                    <a href="javascript:;" onClick={() => toComp(libros)}><img className='' src={librosI} alt="libr"  style={{width:'165%', marginTop:'5em', position:'relative', bottom:libroMeasure, transition:'bottom 0.5s'}} /></a>
-                    <a href="javascript:;" onClick={() => toComp(bio)}><img className='bio' src={bioI} alt="bio" style={{marginTop:'5em', width:'140%', position:'relative', top:bioMeasure, transition:'top 0.5s'}}/></a>
+                    <a href="javascript:;" onClick={() => toComp(libros)}><img className='libros' src={librosI} alt="libros"  style={{bottom:libroMeasure}}/></a>
+                    <a href="javascript:;" onClick={() => toComp(bio)}><img className='bio' src={bioI} alt="bio" style={{top:bioMeasure}}/></a>
                 </div>
                 
-                <div className='col s8' style={{padding:'0'}}>
-                    <img src={majox} alt="" style={{width:'110%'}} />
+                <div className='col s8'>
+                    <img src={majox} className='majox' alt=""/>
                 </div>
-                <div className='col s2' 
-                    style={{marginTop:'7em', paddingLeft:'0'}}
-                    
-                    >
-                    <a href="javascript:;" onClick={() => toComp(portfolio)}><img className='portfolio' src={portfolioI} alt="portfolio" style={{width:'140%', position:'relative', top:portMeasure, transition:'top 0.5s'}} /></a>
+                <div className='col s2 port'>
+                    <a href="javascript:;" onClick={() => toComp(portfolio)}><img className='portfolio' src={portfolioI} alt="portfolio" style={{top:portMeasure}} /></a>
                 </div>
             </div>
         </div>
