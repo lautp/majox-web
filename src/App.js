@@ -19,6 +19,12 @@ function App() {
         <div style={{textAlign:'center'}}>
           <i className='hide-on-large-only' ><img src={negra} alt="" style={{width:'20%'}}/></i>
         </div>
+        <div className='right'>
+        
+        <p><b>Web</b> by El Bauti®  2021 <b>Contacto</b>: lautaro.pretti@gmail.com</p>
+        
+                
+        </div>
       </div>
     </MainState>
   );

@@ -1,18 +1,18 @@
 import React, {useEffect, useContext, useRef} from 'react';
 import M from 'materialize-css/dist/js/materialize.min.js';
 import MainContext from '../../context/mainContext';
-import penny1 from '../img/lowres/1.jpg';
-import penny2 from '../img/lowres/2.jpg';
-import penny3 from '../img/lowres/3.jpg';
-import bsas1 from '../img/lowres/1_BSAS.jpg';
-import bsas2 from '../img/lowres/2_BSAS.jpg';
-import bsas3 from '../img/lowres/3_BSAS.jpg';
-import descubiertas from '../img/descubiertas.jpg';
-import descubiertas2 from '../img/descubiertas2.jpg';
+import penny1 from '../img/1.jpg';
+import penny2 from '../img/2.jpg';
+import penny3 from '../img/3.jpg';
+import bsas1 from '../img/1_BSAS.jpg';
+import bsas2 from '../img/2_BSAS.jpg';
+import bsas3 from '../img/3_BSAS.jpg';
+import igualdad from '../img/igualdad.jpg';
+import PINCH from '../img/PINCH.jpg';
 import ereccion from '../img/ereccion.jpg';
 import llevamealtelo from '../img/llevamealtelo.jpg';
 import oprimidas from '../img/oprimidas.jpg';
-import patriarcade from '../img/patriarcade.jpg';
+import romantic from '../img/romantic.jpg';
 import aram1 from '../img/41.jpg';
 import aram2 from '../img/42.jpg';
 import aram3 from '../img/43.jpg';
@@ -72,10 +72,10 @@ const Carrousel = () => {
                         <img src={bsas3} className='materialboxed' alt='bsas3'/>
                     </div>
                     <div className='col s4'>
-                        <img src={descubiertas} className='materialboxed' alt='descubiertas'/>
+                        <img src={igualdad} className='materialboxed' alt='igualdad'/>
                     </div>
                     <div className='col s4'>
-                        <img src={descubiertas2} className='materialboxed' alt='descubiertas2'/>
+                        <img src={PINCH} className='materialboxed' alt='PINCH'/>
                     </div>
                     <div className='col s4'>
                         <img src={ereccion} className='materialboxed' alt='ereccion'/>
@@ -87,7 +87,7 @@ const Carrousel = () => {
                         <img src={oprimidas} className='materialboxed' alt='oprimidas'/>
                     </div>
                     <div className='col s4'>
-                        <img src={patriarcade} className='materialboxed' alt='patriarcade'/>
+                        <img src={romantic} className='materialboxed' alt='romantic'/>
                     </div>
                     <div className='col s4'>
                         <img src={aram1} className='materialboxed' alt='aram1'/>
